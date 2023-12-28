@@ -22,6 +22,7 @@ const ProjectCard = ({ index, name, description, tags, image, link} ) => {
         >
           <div className="relative w-full h-[230px]">
             <video
+             muted
             src={image}
             alt={name}
             className="w-full h-full object-cover rounded-2xl"
