@@ -36,6 +36,7 @@ import revaya from "./videos/revaya.mp4";
 import rkmb from "./videos/rkmb.mp4";
 import shoptrakk from "./videos/shoptrakk.mp4";
 import torn from "./videos/torn.mp4";
+import shirt from "./videos/shirtcreator.mp4";
 
 export {
   logo,
@@ -73,4 +74,5 @@ export {
   rkmb,
   shoptrakk,
   torn,
+  shirt,
 };
