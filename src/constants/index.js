@@ -243,7 +243,7 @@ const projects = [
     image: malle,
     link: "malle.markbtesh.com"
   },
-
+  {
   name: "T-shirt Creator",
     description:
       "Design your own T-shirt or hoodie with custom designs and patterns. You can even ask AI to make a design for you to put on the shirt and then download the full mock-up.",
