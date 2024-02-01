@@ -30,6 +30,7 @@ import {
   rkmb,
   shoptrakk,
   torn,
+  shirt,
 } from "../assets";
 
 export const navLinks = [
@@ -241,6 +242,39 @@ const projects = [
     ],
     image: malle,
     link: "malle.markbtesh.com"
+  },
+
+  name: "T-shirt Creator",
+    description:
+      "Design your own T-shirt or hoodie with custom designs and patterns. You can even ask AI to make a design for you to put on the shirt and then download the full mock-up.",
+    tags: [
+      {
+        name: "ThreeJS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Node.js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Express",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Vercel",
+        color: "green-text-gradient",
+      },
+      {
+        name: "OpenAI",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: shirt,
+    link: "shirt-designer-threejs.vercel.app"
   },
     {
     name: "Shoptrakk.com",
