@@ -4,7 +4,7 @@ import { styles } from '../styles'
 import { ComputersCanvas } from './canvas';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook,  faInstagram, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faPhone, faEnvelope, faHandPointer } from '@fortawesome/free-solid-svg-icons';
 
 
 
@@ -53,14 +53,36 @@ const Hero = () => {
       </div>
       </div>
       <ComputersCanvas />
-      <div className='xl:pl-20 absolute sm:bottom-10 bottom-32 w-full flex justify-left items-left'>
       
-    </div>
+      <div className='absolute xs:bottom-40 bottom-36 left-60 w-full flex justify-center items-center'>
+    
+          <div className='w-[35px] h-[64px] flex justify-center items-start p-2'>
+            <motion.div
+            initial={{ opacity:0}}
+              animate={{
+                x: [0, 30, 0],
+                opacity: [0, 1, 0]
+              }}
+              transition={{
+                delay: 3,
+                duration: 2,
+                repeat: Infinity,
+                repeatType: "loop",
+              }}
+              className='w-3 h-3 rounded-full'
+            >
+              
+              <FontAwesomeIcon icon={faHandPointer} color='gray' size="1x"  className=" mr-2 pr-1 pl-2 rounded-2xl" />
+              </motion.div>
+          </div>
+      
+        </div>
+
       <div className='absolute xs:bottom-10 bottom-10 w-full flex justify-center items-center'>
         
         <a href='#about'>
           <div className='w-[35px] h-[64px]  rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
-            <motion.div
+            <motion.div 
               animate={{
                 y: [0, 24, 0],
               }}
