@@ -246,7 +246,7 @@ const projects = [
   {
   name: "T-shirt Creator",
     description:
-      "Design a T-shirt/hoodie with custom designs & patterns. Ask AI to make a design to put on the shirt and then download the full mock-up.",
+      "Design a T-shirt/hoodie with custom designs & patterns. Ask AI to make a design to put on the shirt & then download the full mock-up.",
     tags: [
       {
         name: "ThreeJS",
