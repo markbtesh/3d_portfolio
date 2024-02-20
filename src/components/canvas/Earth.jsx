@@ -7,10 +7,15 @@ const Earth = ({ isMobile }) => {
 
   const earth =useGLTF('./desktop_pc/me V3.glb')
   
-    
-  return (
+  const onHoverStart = () => (document.body.style.cursor = 'pointer');
 
-    <mesh>
+  // Function to revert cursor to default
+  const onHoverEnd = () => (document.body.style.cursor = 'default');
+
+  return (
+    <mesh 
+    onPointerOver={onHoverStart} 
+    onPointerOut={onHoverEnd}  >
        <hemisphereLight intesity={0.1}
       groundColor="white" />
       
