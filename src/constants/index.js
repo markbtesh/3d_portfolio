@@ -245,7 +245,7 @@ const projects = [
     link: "malle.markbtesh.com"
   },
   {
-  name: "T-shirt Creator",
+  name: "T-shirt Designer",
     description:
       "Design a T-shirt/hoodie with custom designs & patterns. Ask AI to make a design to put on the shirt & then download the full mock-up.",
     tags: [
