@@ -31,6 +31,7 @@ import {
   shoptrakk,
   torn,
   shirt,
+  smartContract
 } from "../assets";
 
 export const navLinks = [
@@ -275,6 +276,39 @@ const projects = [
     ],
     image: shirt,
     link: "shirt-designer-threejs.vercel.app"
+  },
+  {
+  name: "Crypto Exchange",
+    description:
+      "Send crypto through the blockchain and see transactions in real-time... kinda like Venmo",
+    tags: [
+      {
+        name: "Web3",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Node.js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Express",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Vercel",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Solidity",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: smartContract,
+    link: "web3-smart-contract-app.vercel.app"
   },
     {
     name: "Shoptrakk.com",
