@@ -29,13 +29,21 @@ const Ball = (props) => {
     }
     
   }); 
+const onHoverStart = () => (document.body.style.cursor = 'pointer');
+
+  // Function to revert cursor to default
+  const onHoverEnd = () => (document.body.style.cursor = 'default');
+
 
   return (
     <Float speed={0.75} rotationIntensity={1} floatIntensity={2}
       onPointerOver={handlePointerOver} onClick={handlePointerOver} onPointerOut={handlePointerOut}>
       <ambientLight intensity={0.25}></ambientLight>
       <directionalLight position={[0, 0, 0.05]} />
-      <mesh castShadow receiveShadow scale={2.75} rotation={props.rotation}>
+      <mesh 
+         onPointerOver={onHoverStart} 
+        onPointerOut={onHoverEnd} 
+        castShadow receiveShadow scale={2.75} rotation={props.rotation}>
         <icosahedronGeometry args={[1, 1]} />
         <meshStandardMaterial color="#fff" polygonOffset polygonOffsetFactor={-5} flatShading />
 
