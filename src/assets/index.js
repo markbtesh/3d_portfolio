@@ -37,6 +37,7 @@ import rkmb from "./videos/rkmb.mp4";
 import shoptrakk from "./videos/shoptrakk.mp4";
 import torn from "./videos/torn.mp4";
 import shirt from "./videos/shirtcreator.mp4";
+import smartContract from "./videos/smart-contract.mp4";
 
 export {
   logo,
@@ -75,4 +76,5 @@ export {
   shoptrakk,
   torn,
   shirt,
+  smartContract,
 };
