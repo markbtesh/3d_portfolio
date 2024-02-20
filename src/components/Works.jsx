@@ -75,7 +75,7 @@ const Works = () => {
     };
   }, []);
 
-  const visibleProjects = isSmallScreen ? projects.slice(0, 6) : projects;
+  const visibleProjects = isSmallScreen ? projects.slice(0, 3) : projects;
 
   return (
     <>
