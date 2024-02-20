@@ -6,9 +6,15 @@ import CanvasLoader from "../Loader";
 
 const Computers = ({ isMobile }) => {
   const computer = useGLTF("./desktop_pc/voxel/scene.gltf");
+const onHoverStart = () => (document.body.style.cursor = 'pointer');
+
+  // Function to revert cursor to default
+  const onHoverEnd = () => (document.body.style.cursor = 'default');
 
   return (
-    <mesh>
+    <mesh 
+    onPointerOver={onHoverStart} 
+    onPointerOut={onHoverEnd}  >
       <hemisphereLight intesity={0.15}
       groundColor="white" />
       <pointLight intensity={5} />
