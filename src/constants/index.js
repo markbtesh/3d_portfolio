@@ -230,7 +230,7 @@ const projects = [
         color: "pink-text-gradient",
       },
       {
-        name: "Multiplayer support",
+        name: "Online Multiplayer",
         color: "blue-text-gradient",
       },
       {
