@@ -237,6 +237,10 @@ const projects = [
         name: "Render",
         color: "green-text-gradient",
       },
+       {
+        name: "Node.js",
+        color: "pink-text-gradient",
+      },
     ],
     image: battleship,
     link: "battleship.markbtesh.com"
