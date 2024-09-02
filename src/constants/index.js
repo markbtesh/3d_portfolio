@@ -382,48 +382,8 @@ const projects = [
     image: legend,
     link: "",
   },
-  {
-    name: "Tornxronnykobo.com",
-    description:
-      "",
-    tags: [
-      {
-        name: "shopify",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "liquid",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: torn,
-    link: "",
-  },
-  {
-    name: "RKMBLLC.com",
-    description:
-      "",
-    tags: [
-      {
-        name: "wordpress",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "elementor",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: rkmb,
-    link: "",
-  },
+  
+  
   {
     name: "Revayareserve.com",
     description:
@@ -464,23 +424,6 @@ const projects = [
       },
     ],
     image: ae,
-    link: "",
-  },
-  {
-    name: "Baruchhashempaint.com",
-    description:
-      "",
-    tags: [
-      {
-        name: "wordpress",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "elementor",
-        color: "green-text-gradient",
-      },
-    ],
-    image: bhpaint,
     link: "",
   },
   {
