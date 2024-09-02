@@ -31,7 +31,8 @@ import {
   shoptrakk,
   torn,
   shirt,
-  smartContract
+  smartContract,
+  battleship
 } from "../assets";
 
 export const navLinks = [
@@ -211,6 +212,35 @@ const testimonials = [
 ];
 
 const projects = [
+  {
+      name: "Epic Battleship!",
+    description:
+      "An exciting take on battleship with cool items! Battle against the computer or with your friend online.",
+    tags: [
+      {
+        name: "Angular",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Websocket",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Express",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Multiplayer support",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Render",
+        color: "green-text-gradient",
+      },
+    ],
+    image: battleship,
+    link: "battleship.markbtesh.com"
+  },
   {
       name: "pAInter-AI (DALL-e clone)",
     description:
