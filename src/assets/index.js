@@ -38,6 +38,7 @@ import shoptrakk from "./videos/shoptrakk.mp4";
 import torn from "./videos/torn.mp4";
 import shirt from "./videos/shirtcreator.mp4";
 import smartContract from "./videos/smart-contract.mp4";
+import battleship from "./videos/battleship.mp4";
 
 export {
   logo,
@@ -77,4 +78,5 @@ export {
   torn,
   shirt,
   smartContract,
+  battleship,
 };
