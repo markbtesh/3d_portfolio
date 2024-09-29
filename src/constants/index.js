@@ -32,7 +32,8 @@ import {
   torn,
   shirt,
   smartContract,
-  battleship
+  battleship,
+  pokemon
 } from "../assets";
 
 export const navLinks = [
@@ -212,17 +213,43 @@ const testimonials = [
 ];
 
 const projects = [
-  {
-      name: "Epic Battleship!",
+   {
+      name: "Pokemon Battle Clone",
     description:
-      "An exciting take on battleship with cool items! Battle against the computer or with your friend online.",
+      "A fun Pokemon battle simulator.",
     tags: [
       {
         name: "Angular",
         color: "blue-text-gradient",
       },
       {
-        name: "Websocket",
+        name: "socket.io",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Express",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Render",
+        color: "green-text-gradient",
+      },
+       {
+        name: "Node.js",
+        color: "pink-text-gradient",
+      },
+    ],
+  {
+      name: "Epic Battleship!",
+    description:
+      "An exciting take on Battleship with cool items! Battle against the computer or with your friend online.",
+    tags: [
+      {
+        name: "Angular",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "socket.io",
         color: "green-text-gradient",
       },
       {
