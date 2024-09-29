@@ -239,6 +239,9 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
+     image: pokemon,
+    link: "pokemon-battle-eight.vercel.app"
+  },
   {
       name: "Epic Battleship!",
     description:
