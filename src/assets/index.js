@@ -39,6 +39,7 @@ import torn from "./videos/torn.mp4";
 import shirt from "./videos/shirtcreator.mp4";
 import smartContract from "./videos/smart-contract.mp4";
 import battleship from "./videos/battleship.mp4";
+import pokemon from "./videos/pokemon.mp4";
 
 export {
   logo,
@@ -79,4 +80,5 @@ export {
   shirt,
   smartContract,
   battleship,
+  pokemon,
 };
