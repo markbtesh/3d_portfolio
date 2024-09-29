@@ -272,7 +272,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: battleship,
+    image: pokemon,
     link: "battleship.markbtesh.com"
   },
   {
