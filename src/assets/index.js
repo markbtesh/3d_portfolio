@@ -40,6 +40,7 @@ import shirt from "./videos/shirtcreator.mp4";
 import smartContract from "./videos/smart-contract.mp4";
 import battleship from "./videos/battleship.mp4";
 import pokemon from "./videos/pokemon.mp4";
+import micromanager from "./videos/micromanager.mp4";
 
 export {
   logo,
@@ -81,4 +82,5 @@ export {
   smartContract,
   battleship,
   pokemon,
+  micromanager,
 };
