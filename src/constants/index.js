@@ -33,7 +33,8 @@ import {
   shirt,
   smartContract,
   battleship,
-  pokemon
+  pokemon,
+  micromanager,
 } from "../assets";
 
 export const navLinks = [
@@ -213,6 +214,43 @@ const testimonials = [
 ];
 
 const projects = [
+  {
+      name: "Micro Manager CRM",
+    description:
+      "A user dashboard for organizing tasks and working on documents with co-workers in real-time",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "socket.io",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Next.js",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Render",
+        color: "green-text-gradient",
+      },
+       {
+        name: "Node.js",
+        color: "pink-text-gradient",
+      },
+       {
+        name: "Draggable",
+        color: "blue-text-gradient",
+      },
+       {
+        name: "real-time collaboration",
+        color: "green-text-gradient",
+      },
+    ],
+     image: micromanager,
+    link: "react-user-dashboard.onrender.com"
+  },
    {
       name: "Pokemon Battle Clone",
     description:
@@ -231,7 +269,7 @@ const projects = [
         color: "pink-text-gradient",
       },
       {
-        name: "Render",
+        name: "Vercel",
         color: "green-text-gradient",
       },
        {
