@@ -240,7 +240,7 @@ const projects = [
         color: "pink-text-gradient",
       },
        {
-        name: "Draggable",
+        name: "Tailwindcss",
         color: "blue-text-gradient",
       },
        {
@@ -265,16 +265,12 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "Express",
-        color: "pink-text-gradient",
-      },
-      {
         name: "Vercel",
-        color: "green-text-gradient",
+        color: "pink-text-gradient",
       },
        {
         name: "Node.js",
-        color: "pink-text-gradient",
+        color: "blue-text-gradient",
       },
     ],
      image: pokemon,
