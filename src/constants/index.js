@@ -217,7 +217,7 @@ const projects = [
   {
       name: "Micro Manager CRM",
     description:
-      "A user dashboard for organizing tasks and working on documents with co-workers in real-time",
+      "A user dashboard for organizing tasks and working on documents with co-workers in real-time (Desktop Only)",
     tags: [
       {
         name: "React",
