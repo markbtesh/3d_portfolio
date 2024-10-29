@@ -409,7 +409,7 @@ const FullstackProjects = [
     link: "web3-smart-contract-app.vercel.app"
   },
    
-  },
+  ];
 
 const projects = [
   {
