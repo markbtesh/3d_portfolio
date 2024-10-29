@@ -92,7 +92,7 @@ const Works = () => {
           The following projects are websites I have designed and built for various clients. Each project is briefly showcased and displays the technology it uses. It reflects my
           ability to solve complex problems, work with different technologies,
           and manage projects effectively
-      </a>
+     
         </motion.p>
       </div>
       
