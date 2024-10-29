@@ -91,8 +91,7 @@ const Works = () => {
         >
           The following projects are websites I have designed and built for various clients. Each project is briefly showcased and displays the technology it uses. It reflects my
           ability to solve complex problems, work with different technologies,
-          and manage projects effectively. You can find the source code to some of my projects <a href="https://github.com/markbtesh">here.</a> <a href="https://github.com/markbtesh" target="_blank" rel="noopener noreferrer">
-        <FontAwesomeIcon icon={faGithub} color='black' size="1x"  className=" mr-2 pr-1 pl-2 rounded-2xl" />
+          and manage projects effectively
       </a>
         </motion.p>
       </div>
