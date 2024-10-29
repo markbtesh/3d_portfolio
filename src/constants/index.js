@@ -213,6 +213,204 @@ const testimonials = [
   },
 ];
 
+const FullstackProjects = [
+  {
+      name: "Micro Manager CRM",
+    description:
+      "A user dashboard for organizing tasks and working on documents with co-workers in real-time (Desktop Only)",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "socket.io",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Next.js",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Render",
+        color: "green-text-gradient",
+      },
+       {
+        name: "Node.js",
+        color: "pink-text-gradient",
+      },
+       {
+        name: "Tailwindcss",
+        color: "blue-text-gradient",
+      },
+       {
+        name: "real-time collaboration",
+        color: "green-text-gradient",
+      },
+    ],
+     image: micromanager,
+    link: "react-user-dashboard.onrender.com"
+  },
+   {
+      name: "Pokemon Battle Clone",
+    description:
+      "A fun Pokemon battle simulator.",
+    tags: [
+      {
+        name: "Angular",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "socket.io",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Vercel",
+        color: "pink-text-gradient",
+      },
+       {
+        name: "Node.js",
+        color: "blue-text-gradient",
+      },
+    ],
+     image: pokemon,
+    link: "pokemon-battle-eight.vercel.app"
+  },
+  {
+      name: "Epic Battleship!",
+    description:
+      "An exciting take on Battleship with cool items! Battle against the computer or with your friend online.",
+    tags: [
+      {
+        name: "Angular",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "socket.io",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Express",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Online Multiplayer",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Render",
+        color: "green-text-gradient",
+      },
+       {
+        name: "Node.js",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: battleship,
+    link: "battleship.markbtesh.com"
+  },
+  {
+      name: "pAInter-AI (DALL-e clone)",
+    description:
+      "Create wonderful images by typing in a prompt for AI to generate.",
+    tags: [
+      {
+        name: "MongoDB",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Node.js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Express",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Vercel",
+        color: "green-text-gradient",
+      },
+      {
+        name: "OpenAI",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: malle,
+    link: "malle.markbtesh.com"
+  },
+  {
+  name: "T-shirt Designer",
+    description:
+      "Design a T-shirt/hoodie with custom designs & patterns. Ask AI to make a design to put on the shirt & then download the full mock-up.",
+    tags: [
+      {
+        name: "ThreeJS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Node.js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Express",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Vercel",
+        color: "green-text-gradient",
+      },
+      {
+        name: "OpenAI",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: shirt,
+    link: "shirt-designer-threejs.vercel.app"
+  },
+  {
+  name: "Crypto Exchange",
+    description:
+      "Send crypto through the blockchain and see transactions in real-time... kinda like Venmo",
+    tags: [
+      {
+        name: "Web3",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Node.js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Express",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Vercel",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Solidity",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: smartContract,
+    link: "web3-smart-contract-app.vercel.app"
+  },
+   
+  },
+
 const projects = [
   {
       name: "Micro Manager CRM",
