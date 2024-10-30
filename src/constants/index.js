@@ -15,32 +15,17 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
   threejs,
-  ae,
-  beermayim,
-  bhpaint,
-  legend,
-  malle,
-  purify,
-  revaya,
-  rkmb,
-  shoptrakk,
-  torn,
-  shirt,
-  smartContract,
-  battleship,
-  pokemon,
-  micromanager,
 } from "../assets";
 
 export const navLinks = [
   {
     id: "about",
     title: "About",
+  },
+  {
+    id: "fullstack work",
+    title: "Fullstack",
   },
   {
     id: "work",
@@ -127,92 +112,6 @@ const technologies = [
   
 ];
 
-const experiences = [
-  {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-    img: "https://aecostudios.com/wp-content/portfolio-uploads/2023/09/a64f7fc2-23a1-4158-815e-603ef507b6a1.jpg"
-  },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-    img: "https://aecostudios.com/wp-content/portfolio-uploads/2023/09/tasha-logo.png"
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-    img: "https://aecostudios.com/wp-content/portfolio-uploads/2023/09/05a461cb-40c4-4ba3-98ac-d90fc38b083d.jpg"
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-    img: "https://aecostudios.com/wp-content/portfolio-uploads/2023/11/yinyang.png"
-  },
-];
-
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
-];
-
 const FullstackProjects = [
   {
       name: "Micro Manager CRM",
@@ -248,7 +147,7 @@ const FullstackProjects = [
         color: "green-text-gradient",
       },
     ],
-     image: micromanager,
+     image: 'https://d1rz0mlg9ltl84.cloudfront.net/videos/micromanager.mp4',
     link: "react-user-dashboard.onrender.com"
   },
    {
@@ -273,7 +172,7 @@ const FullstackProjects = [
         color: "blue-text-gradient",
       },
     ],
-     image: pokemon,
+     image: 'https://d1rz0mlg9ltl84.cloudfront.net/videos/pokemon.mp4',
     link: "pokemon-battle-eight.vercel.app"
   },
   {
@@ -306,7 +205,7 @@ const FullstackProjects = [
         color: "pink-text-gradient",
       },
     ],
-    image: battleship,
+    image: 'https://d1rz0mlg9ltl84.cloudfront.net/videos/battleship.mp4',
     link: "battleship.markbtesh.com"
   },
   {
@@ -339,7 +238,7 @@ const FullstackProjects = [
         color: "pink-text-gradient",
       },
     ],
-    image: malle,
+    image: 'https://d1rz0mlg9ltl84.cloudfront.net/videos/malledemo.mp4',
     link: "malle.markbtesh.com"
   },
   {
@@ -372,7 +271,7 @@ const FullstackProjects = [
         color: "pink-text-gradient",
       },
     ],
-    image: shirt,
+    image: 'https://d1rz0mlg9ltl84.cloudfront.net/videos/shirtcreator.mp4',
     link: "shirt-designer-threejs.vercel.app"
   },
   {
@@ -405,207 +304,13 @@ const FullstackProjects = [
         color: "pink-text-gradient",
       },
     ],
-    image: smartContract,
+    image: 'https://d1rz0mlg9ltl84.cloudfront.net/videos/smart-contract.mp4',
     link: "web3-smart-contract-app.vercel.app"
   },
    
   ];
 
 const projects = [
-  {
-      name: "Micro Manager CRM",
-    description:
-      "A user dashboard for organizing tasks and working on documents with co-workers in real-time (Desktop Only)",
-    tags: [
-      {
-        name: "React",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "socket.io",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Next.js",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Render",
-        color: "green-text-gradient",
-      },
-       {
-        name: "Node.js",
-        color: "pink-text-gradient",
-      },
-       {
-        name: "Tailwindcss",
-        color: "blue-text-gradient",
-      },
-       {
-        name: "real-time collaboration",
-        color: "green-text-gradient",
-      },
-    ],
-     image: micromanager,
-    link: "react-user-dashboard.onrender.com"
-  },
-   {
-      name: "Pokemon Battle Clone",
-    description:
-      "A fun Pokemon battle simulator.",
-    tags: [
-      {
-        name: "Angular",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "socket.io",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Vercel",
-        color: "pink-text-gradient",
-      },
-       {
-        name: "Node.js",
-        color: "blue-text-gradient",
-      },
-    ],
-     image: pokemon,
-    link: "pokemon-battle-eight.vercel.app"
-  },
-  {
-      name: "Epic Battleship!",
-    description:
-      "An exciting take on Battleship with cool items! Battle against the computer or with your friend online.",
-    tags: [
-      {
-        name: "Angular",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "socket.io",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Express",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Online Multiplayer",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Render",
-        color: "green-text-gradient",
-      },
-       {
-        name: "Node.js",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: battleship,
-    link: "battleship.markbtesh.com"
-  },
-  {
-      name: "pAInter-AI (DALL-e clone)",
-    description:
-      "Create wonderful images by typing in a prompt for AI to generate.",
-    tags: [
-      {
-        name: "MongoDB",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Node.js",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Express",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "React",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Vercel",
-        color: "green-text-gradient",
-      },
-      {
-        name: "OpenAI",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: malle,
-    link: "malle.markbtesh.com"
-  },
-  {
-  name: "T-shirt Designer",
-    description:
-      "Design a T-shirt/hoodie with custom designs & patterns. Ask AI to make a design to put on the shirt & then download the full mock-up.",
-    tags: [
-      {
-        name: "ThreeJS",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Node.js",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Express",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "React",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Vercel",
-        color: "green-text-gradient",
-      },
-      {
-        name: "OpenAI",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: shirt,
-    link: "shirt-designer-threejs.vercel.app"
-  },
-  {
-  name: "Crypto Exchange",
-    description:
-      "Send crypto through the blockchain and see transactions in real-time... kinda like Venmo",
-    tags: [
-      {
-        name: "Web3",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Node.js",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Express",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "React",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Vercel",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Solidity",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: smartContract,
-    link: "web3-smart-contract-app.vercel.app"
-  },
     {
     name: "Shoptrakk.com",
     description:
@@ -624,7 +329,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: shoptrakk,
+    image: 'https://d1rz0mlg9ltl84.cloudfront.net/videos/shoptrakk.mp4',
     link: "",
   },
   {
@@ -645,7 +350,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: legend,
+    image: 'https://d1rz0mlg9ltl84.cloudfront.net/videos/legend.mp4',
     link: "",
   },
   
@@ -668,7 +373,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: revaya,
+    image: 'https://d1rz0mlg9ltl84.cloudfront.net/videos/revaya.mp4',
     link: "",
   },
   {
@@ -689,7 +394,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: ae,
+    image: 'https://d1rz0mlg9ltl84.cloudfront.net/videos/ae.mp4',
     link: "",
   },
   {
@@ -710,7 +415,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: purify,
+    image: 'https://d1rz0mlg9ltl84.cloudfront.net/videos/purify.mp4',
     link: "",
   },
   {
@@ -731,10 +436,10 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: beermayim,
+    image: "https://d1rz0mlg9ltl84.cloudfront.net/videos/beermayim.mp4",
     link: "",
   },
   
 ];
 
-export { services, technologies, experiences, testimonials, projects, FullstackProjects };
+export { services, technologies,  projects, FullstackProjects };

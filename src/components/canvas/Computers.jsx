@@ -5,7 +5,7 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
 const Computers = ({ isMobile }) => {
-  const computer = useGLTF("./desktop_pc/voxel/scene.gltf");
+  const computer = useGLTF("https://d1rz0mlg9ltl84.cloudfront.net/desktop_pc/voxel/scene.gltf");
 const onHoverStart = () => (document.body.style.cursor = 'pointer');
 
   // Function to revert cursor to default

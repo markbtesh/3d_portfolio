@@ -5,7 +5,7 @@ import CanvasLoader from '../Loader';
 
 const Earth = ({ isMobile }) => {
 
-  const earth =useGLTF('./desktop_pc/me V3.glb')
+  const earth =useGLTF('https://d1rz0mlg9ltl84.cloudfront.net/desktop_pc/me V3.glb')
   
   const onHoverStart = () => (document.body.style.cursor = 'pointer');
 

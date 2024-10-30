@@ -23,6 +23,9 @@ const ProjectCard = ({ index, name, description, tags, image, link} ) => {
           <div className="relative w-full h-[230px]">
             <video
              muted
+             playsInline
+             autoPlay
+             loop
             src={image}
             alt={name}
             className="w-full h-full object-cover rounded-2xl"
@@ -81,7 +84,7 @@ const Works = () => {
     <>
        <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} `}>My work</p>
-        <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
+        <h2 className={`${styles.sectionHeadText}`}>Websites.</h2>
       </motion.div>
 
       <div className='w-full flex'>
@@ -105,3 +108,4 @@ const Works = () => {
   );
 };
 export default SectionWrapper(Works, "work")
+

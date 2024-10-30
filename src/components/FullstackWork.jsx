@@ -23,6 +23,9 @@ const ProjectCard = ({ index, name, description, tags, image, link} ) => {
           <div className="relative w-full h-[230px]">
             <video
              muted
+             playsInline
+             autoPlay
+             loop
             src={image}
             alt={name}
             className="w-full h-full object-cover rounded-2xl"
@@ -88,7 +91,7 @@ const FullstackWork = () => {
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
-  
+  >
           The following projects are web applications I have built using cutting-edge technology. You can find the source code to all of my projects on my github <a href="https://github.com/markbtesh">here.</a> <a href="https://github.com/markbtesh" target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={faGithub} color='black' size="1x"  className=" mr-2 pr-1 pl-2 rounded-2xl" />
       </a>
