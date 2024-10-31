@@ -29,7 +29,7 @@ const Ball = (props) => {
     }
     
   }); 
-const onHoverStart = () => (document.body.style.cursor = 'pointer');
+const onHoverStart = () => (document.body.style.cursor = 'grab');
 
   // Function to revert cursor to default
   const onHoverEnd = () => (document.body.style.cursor = 'default');

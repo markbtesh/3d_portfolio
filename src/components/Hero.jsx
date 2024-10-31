@@ -27,7 +27,13 @@ const Hero = () => {
           I develop websites, programs, <br className="sm:block hidden" /> and web applications.
           <br className="sm:block hidden" />Welcome to my portfolio, feel free <br className="sm:block hidden" /> to interact with everything!
         </p>
+      <br />
+        <a
+           href="#fullstack%20work"
+            className='bg-[#574260] hover:bg-[#3a2c41] transition-colors py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary/50'
+          >View My Work</a>
         <br /> 
+        <br />
         <ul className="icon-list">
       <li><FontAwesomeIcon icon={faPhone} color="#FF5D29" className='pr-2'/>
         <span>917-648-0846</span></li>
