@@ -23,7 +23,6 @@ const ProjectCard = ({ index, name, description, tags, image, link} ) => {
           <div className="relative w-full h-[230px]">
             <video
              muted
-             playsInline
              autoPlay
              loop
             src={image}

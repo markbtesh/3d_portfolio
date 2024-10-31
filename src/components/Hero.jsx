@@ -31,7 +31,7 @@ const Hero = () => {
         <a
            href="#fullstack%20work"
             className='bg-[#574260] hover:bg-[#3a2c41] transition-colors py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary/50'
-          >View My Work</a>
+          >View My Projects</a>
         <br /> 
         <br />
         <ul className="icon-list">
