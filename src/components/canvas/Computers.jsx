@@ -28,8 +28,8 @@ const onHoverStart = () => (document.body.style.cursor = 'pointer');
         />
       <primitive
         object={computer.scene}
-        scale={isMobile ? 0.5 : 0.9}
-        position={isMobile ? [0, -3.3, 1] : [0, -2, -1.5]}
+        scale={isMobile ? 0.35 : 0.9}
+        position={isMobile ? [0, -3.5, 1] : [0, -2, -1.5]}
         rotation={[0, -0, -0.1]}
       />
     </mesh>
