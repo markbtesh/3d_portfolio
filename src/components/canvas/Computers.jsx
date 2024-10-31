@@ -73,6 +73,17 @@ const ComputersCanvas = () => {
           enableZoom={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
+          onStart={(e) => {
+            // Only allow dragging on the x-axis
+            e.target.rotateSpeedY = 0; // Disable y-axis rotation
+          }}
+          onChange={(e) => {
+            if (isMobile) {
+              // Allow page scrolling if y-axis movement detected on mobile
+              const deltaY = Math.abs(e.target.previousTouches[0].clientY - e.target.touches[0].clientY);
+              if (deltaY > 10) e.target.enabled = false;
+            }
+          }}
         />
         <Computers isMobile={isMobile} />
       </Suspense>
