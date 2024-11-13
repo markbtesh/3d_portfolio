@@ -150,6 +150,43 @@ const FullstackProjects = [
      image: 'https://d1rz0mlg9ltl84.cloudfront.net/videos/micromanager.mp4',
     link: "react-user-dashboard.onrender.com"
   },
+    {
+      name: "Futuristic Dashboard",
+    description:
+      "A fully interactive user dashboard inspired by MARVEL's JARVIS, featuring an AI assistant, immersive 3D UI elements, and real-time data management for a cutting-edge experience (Desktop Only).",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "ThreeJS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Next.js",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "OpenAI",
+        color: "green-text-gradient",
+      },
+       {
+        name: "Node.js",
+        color: "pink-text-gradient",
+      },
+       {
+        name: "Tailwindcss",
+        color: "blue-text-gradient",
+      },
+       {
+        name: "Vercel",
+        color: "green-text-gradient",
+      },
+    ],
+     image: 'https://d1rz0mlg9ltl84.cloudfront.net/videos/jarvis.mp4',
+    link: "jarvis-dashboard.vercel.app"
+  },
    {
       name: "Pokemon Battle Clone",
     description:
