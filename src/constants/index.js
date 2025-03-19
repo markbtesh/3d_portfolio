@@ -414,7 +414,7 @@ const projects = [
     link: "",
   },
   {
-    name: "Autumnestate.co",
+    name: "Creditcapitalsource.com",
     description:
       "",
     tags: [
@@ -423,7 +423,7 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
-        name: "woocommerce",
+        name: "Elementor",
         color: "green-text-gradient",
       },
       {
@@ -431,7 +431,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: 'https://d1rz0mlg9ltl84.cloudfront.net/videos/ae.mp4',
+    image: 'https://d1rz0mlg9ltl84.cloudfront.net/videos/ccs.webm',
     link: "",
   },
   {
