@@ -31,14 +31,14 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
-    emailjs.send('service_yb4hvb8', 'template_u9bjvel',
+    emailjs.send('service_7euve5s', 'template_e4uwjj9',
     {
     from_name: form.name,
     to_name: 'Mark',
     to_email: 'mbsoftdesign@gmail.com',
     message: form.message,
     },
-    'V4f87Pi01It_cqmYq'
+    'Cs_rvHCmdtHU-bZqd'
 
     )
     .then(() => {
