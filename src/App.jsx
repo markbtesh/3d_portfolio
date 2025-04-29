@@ -13,10 +13,10 @@ const App = () => {
         <Hero />
 
          </div>
+        <FullstackWorks />
+         <Works />
          <About />
          <Tech />
-         <FullstackWorks />
-         <Works />
          <div className="relative z-0">
           <Contact />
           <StarsCanvas />
