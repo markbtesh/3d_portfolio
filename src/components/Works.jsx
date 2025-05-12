@@ -1,78 +1,118 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
-const ProjectCard = ({ index, name, description, tags, image, link} ) => {
-    return (
-      <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-        <Tilt
-         options={{
+const ProjectCard = ({ index, name, description, tags, image, link }) => {
+  const videoRef = useRef(null);
+  const containerRef = useRef(null);
+  const [isVideoLoaded, setIsVideoLoaded] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect();
+        }
+      },
+      {
+        rootMargin: '50px',
+        threshold: 0.1
+      }
+    );
+
+    if (containerRef.current) {
+      observer.observe(containerRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    if (isVisible && videoRef.current) {
+      videoRef.current.load();
+    }
+  }, [isVisible]);
+
+  const handleVideoLoad = () => {
+    setIsVideoLoaded(true);
+  };
+
+  return (
+    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+      <Tilt
+        options={{
           max: 45,
           scale: 1,
           speed: 450
         }}
         className="bg-[#15103047] p-5 rounded-2xl sm:w-[360px] w-full"
-        >
-          <div className="relative w-full h-[230px]">
+      >
+        <div ref={containerRef} className="relative w-full h-[230px]">
+          {!isVideoLoaded && (
+            <div className="absolute inset-0 flex items-center justify-center bg-gray-800 rounded-2xl">
+              <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-white"></div>
+            </div>
+          )}
+          {isVisible && (
             <video
-             muted
-             playsInline
-             autoPlay
-             loop
-            src={image}
-            alt={name}
-            className="w-full h-full object-cover rounded-2xl"
-            onMouseOver={event => event.target.play()}
-            onClick={event => event.target.play()}
-            onMouseOut={event => event.target.pause()} />
-            
-          </div>
+              ref={videoRef}
+              muted
+              playsInline
+              autoPlay
+              loop
+              preload="metadata"
+              className={`w-full h-full object-cover rounded-2xl ${!isVideoLoaded ? 'opacity-0' : 'opacity-100'}`}
+              onLoadedData={handleVideoLoad}
+            >
+              <source src={image} type="video/mp4" />
+            </video>
+          )}
+        </div>
 
-          <a className="cursor-pointer" onClick={() => window.open(link === "" ? `https://${name}` : `https://${link}`, "_blank")}> 
-
+        <a 
+          className="cursor-pointer" 
+          onClick={() => window.open(link === "" ? `https://${name}` : `https://${link}`, "_blank")}
+        >
           <div className="mt-5">
-          <h3 >{name}</h3>
-          <p className='mt-2 text-secondary text-[14px]'>{description}</p>
+            <h3>{name}</h3>
+            <p className='mt-2 text-secondary text-[14px]'>{description}</p>
           </div>
 
           <div className='mt-4 flex flex-wrap gap-2'>
-          {tags.map((tag) => (
-            <p
-              key={`${name}-${tag.name}`}
-              className={`text-[14px] ${tag.color}`}
-            >
-              #{tag.name}
-            </p>
-          ))}
-        </div>
-        </a> 
-        </Tilt>
-      </motion.div>
-    )
-}
+            {tags.map((tag) => (
+              <p
+                key={`${name}-${tag.name}`}
+                className={`text-[14px] ${tag.color}`}
+              >
+                #{tag.name}
+              </p>
+            ))}
+          </div>
+        </a>
+      </Tilt>
+    </motion.div>
+  );
+};
 
 const Works = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsSmallScreen(window.innerWidth <= 768); // Adjust the threshold as needed
+      setIsSmallScreen(window.innerWidth <= 768); 
     };
 
-    // Initial check on mount
     handleResize();
 
-    // Listen for window resize events
     window.addEventListener("resize", handleResize);
 
-    // Cleanup the event listener on component unmount
     return () => {
       window.removeEventListener("resize", handleResize);
     };

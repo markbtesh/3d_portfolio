@@ -1,31 +1,45 @@
-import logo from "./mb-logo.svg";
-import backend from "./backend.png";
-import creator from "./creator.png";
-import mobile from "./mobile.png";
-import web from "./web.png";
-import github from "./github.png";
-import menu from "./menu.svg";
-import close from "./close.svg";
+// Import images with dynamic imports for better code splitting
+const logo = new URL("./mb-logo.svg", import.meta.url).href;
+const backend = new URL("./backend.png", import.meta.url).href;
+const creator = new URL("./creator.png", import.meta.url).href;
+const mobile = new URL("./mobile.png", import.meta.url).href;
+const web = new URL("./web.png", import.meta.url).href;
+const github = new URL("./github.png", import.meta.url).href;
+const menu = new URL("./menu.svg", import.meta.url).href;
+const close = new URL("./close.svg", import.meta.url).href;
 
-import css from "./tech/css.png";
-import docker from "./tech/wordpress.png";
-import figma from "./company/shopify.png";
-import git from "./tech/git.png";
-import html from "./tech/html.png";
-import javascript from "./tech/javascript.png";
-import mongodb from "./tech/mongodb.png";
-import nodejs from "./tech/nodejs.png";
-import reactjs from "./tech/reactjs.png";
-import redux from "./tech/squarespace.png";
-import tailwind from "./tech/tailwind.png";
-import typescript from "./tech/blender.png";
-import threejs from "./tech/threejs.svg";
+// Tech icons
+const css = new URL("./tech/css.png", import.meta.url).href;
+const docker = new URL("./tech/wordpress.png", import.meta.url).href;
+const figma = new URL("./company/shopify.png", import.meta.url).href;
+const git = new URL("./tech/git.png", import.meta.url).href;
+const html = new URL("./tech/html.png", import.meta.url).href;
+const javascript = new URL("./tech/javascript.png", import.meta.url).href;
+const mongodb = new URL("./tech/mongodb.png", import.meta.url).href;
+const nodejs = new URL("./tech/nodejs.png", import.meta.url).href;
+const reactjs = new URL("./tech/reactjs.png", import.meta.url).href;
+const redux = new URL("./tech/squarespace.png", import.meta.url).href;
+const tailwind = new URL("./tech/tailwind.png", import.meta.url).href;
+const typescript = new URL("./tech/blender.png", import.meta.url).href;
+const threejs = new URL("./tech/threejs.svg", import.meta.url).href;
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+// Company logos
+const meta = new URL("./company/meta.png", import.meta.url).href;
+const shopify = new URL("./company/shopify.png", import.meta.url).href;
+const starbucks = new URL("./company/starbucks.png", import.meta.url).href;
+const tesla = new URL("./company/tesla.png", import.meta.url).href;
 
+// Preload critical images
+const preloadImages = () => {
+  const criticalImages = [logo, menu, close];
+  criticalImages.forEach(src => {
+    const img = new Image();
+    img.src = src;
+  });
+};
+
+// Call preload on module load
+preloadImages();
 
 export {
   logo,
