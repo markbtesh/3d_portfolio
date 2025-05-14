@@ -6,7 +6,6 @@ import * as random from "maath/random/dist/maath-random.esm";
 const Stars = (props) => {
   const ref = useRef();
   const [isMobile, setIsMobile] = useState(false);
-  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     const checkMobile = () => {
@@ -17,34 +16,13 @@ const Stars = (props) => {
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        } else {
-          setIsVisible(false);
-        }
-      },
-      {
-        threshold: 0.1
-      }
-    );
-
-    if (ref.current) {
-      observer.observe(ref.current.parentElement);
-    }
-
-    return () => observer.disconnect();
-  }, []);
-
   const sphere = useMemo(() => 
     random.inSphere(new Float32Array(isMobile ? 1500 : 2000), { radius: 1.2 }),
     [isMobile]
   );
 
   useFrame((state, delta) => {
-    if (ref.current && isVisible) {
+    if (ref.current) {
       ref.current.rotation.x -= delta / 10;
       ref.current.rotation.y -= delta / 15;
     }
