@@ -1,4 +1,4 @@
-import React, { Suspense, useState } from "react";
+import { Suspense, useState } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Decal, Float, OrbitControls, Preload, useTexture } from "@react-three/drei";
 

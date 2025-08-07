@@ -34,6 +34,8 @@ const Contact = () => {
     emailjs.send('service_7euve5s', 'template_e4uwjj9',
     {
     from_name: form.name,
+    from_email: form.email,
+    from_phone: form.phone,
     to_name: 'Mark',
     to_email: 'mbsoftdesign@gmail.com',
     message: form.message,
@@ -79,6 +81,7 @@ const Contact = () => {
             <input
               type='text'
               name='name'
+              required
               value={form.name}
               onChange={handleChange}
               placeholder="What's your full name?"
@@ -90,9 +93,21 @@ const Contact = () => {
             <input
               type='email'
               name='email'
+              required
               value={form.email}
               onChange={handleChange}
-              placeholder="What's your web address?"
+              placeholder="What's your email address?"
+              className='bg-[#574260] py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+            />
+          </label>
+          <label className='flex flex-col'>
+            <span className='text-white font-medium mb-4'>Your phone number</span>
+            <input
+              type='tel'
+              name='phone'
+              value={form.phone}
+              onChange={handleChange}
+              placeholder="What's your phone number?"
               className='bg-[#574260] py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
@@ -101,6 +116,7 @@ const Contact = () => {
             <textarea
               rows={7}
               name='message'
+              required
               value={form.message}
               onChange={handleChange}
               placeholder='How can I help you?'
